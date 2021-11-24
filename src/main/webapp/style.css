@@ -1,0 +1,106 @@
+@charset "utf-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	background-color: #F06060;
+	max-width: 500px;
+	margin: 0 auto;
+	color: #FFFAD5;
+}
+h1{
+	color: #FFFAD5;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.botao1{
+	background-color: #FFFAD5;
+	max-width: 250px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	color: #F06060;
+	font-weight: bold;
+	font-size: 1.5em;
+	display: block;
+	margin-top:20px;
+	margin-left: 120px;
+	cursor:pointer;
+	border:0;
+}
+.botao1:hover{
+	background-color: #F06060;
+	color: #FFFAD5;
+}
+.form{
+	color: #FFFAD5;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center; 
+}
+table{
+	text-align: left;
+	margin: 0 auto;
+}
+table tr{
+	margin-top:20px;
+	margin:20px auto;
+}
+table td{
+	margin-top:20px;
+	
+}
+.caixa1{
+	max-width:320px;
+	padding: 5px;
+	margin-bottom:5px;
+	border: 2px solid #FFFAD5; 
+}
+.caixa3{
+	max-width:320px;
+	padding: 5px;
+	margin-bottom:5px;
+	border: 2px solid #FFFAD5; 
+	margin-left:6px;
+}
+.caixa2{
+	max-width:320px;
+	padding: 5px;
+	margin-bottom:5px;
+	border: 2px solid #FFFAD5; 
+	margin-left:10px;
+	
+}
+#caixa4{
+	max-width:320px;
+	padding: 5px;
+	margin-bottom:5px;
+	border: 2px solid #000; 
+	margin-left:4px;
+}
+.botao2{
+	background-color: #FFFAD5;
+	max-width: 250px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	color: #F06060;
+	font-weight: bold;
+	font-size: 1.5em;
+	display: block;
+	margin:20px auto 0 auto;
+	cursor:pointer;
+	border:0;
+}
+.botao2:hover{
+	background-color: #F06060;
+	color: #FFFAD5;
+}
+.tabelinha thead{
+	margin-left: 100px;
+}

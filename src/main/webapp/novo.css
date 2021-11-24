@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{
+	font-family: sans-serif;
+}
+.tabelinha{
+	 background-color: #FFFAD5;
+	 color:#F06060;
+	 border-collapse: collapse;
+	 margin: 30px auto;
+	 text-align: center;
+}
+.tabelinha thead{
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 10px;
+	background-color: #FFFAD5;
+	color:#F06060;
+	
+}
+.tabelinha td{
+	border: 1px solid #F06060;
+	padding: 10px;
+	text-align: left;
+}
+.tabelinha td a{
+	color :#F06060 ;
+}
+.tabelinha td:last-child(){
+	background: red;
+}
