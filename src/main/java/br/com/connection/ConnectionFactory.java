@@ -21,8 +21,8 @@ public class ConnectionFactory {
 			throw new RuntimeException();
 		}
 		pool.setJdbcUrl("jdbc:mysql://localhost/dbagencia?useTimezone=true&serverTimezone=UTC");
-		pool.setUser("root");
-		pool.setPassword("andrew123");
+		pool.setUser("");
+		pool.setPassword("");
 		pool.setMaxPoolSize(15);
 		this.dataSoucer = pool;
 	}
