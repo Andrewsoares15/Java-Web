@@ -9,7 +9,7 @@ package br.com.model;
 		
 		
 		public JavaBeans() {
-			super();
+			
 		}
 		
 

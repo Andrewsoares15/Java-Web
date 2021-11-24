@@ -1,14 +1,9 @@
 <%@page import="br.com.model.JavaBeans"%>
-
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.ArrayList"%>
-    
-<% 
-	ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos"); 
-	
-%>
-    
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,18 +26,18 @@
 			<th>Excluir </th>
 		</thead>
 		<tbody>
-			<%for(int i = 0; i < lista.size();i++){ %>
+			<c:forEach items="${contatos}" var="itens">
 			<tr>
-				<td><%=lista.get(i).getIdcon()%></td>
-				<td><%=lista.get(i).getNome()%></td>
-				<td><%=lista.get(i).getFone()%></td>
-				<td><%=lista.get(i).getEmail()%></td>
-				<td><a href="select?idcon=<%= lista.get(i).getIdcon() %> class="editar">Editar</a></td>
-				<td><a href="javascript: confirmar(<%= lista.get(i).getIdcon() %>) ">Excluir</a></td>
+				<td>${itens.idcon}</td>
+				<td>${itens.nome}</td>
+				<td>${itens.fone}</td>
+				<td>${itens.email}</td>
+				<td><a href="select?idcon=${itens.idcon}" class="editar">Editar</a></td>
+				<td><a href="javascript: confirmar(${itens.idcon}) ">Excluir</a></td>
 			</tr>
-			<%} %>
+			</c:forEach>
 		</tbody>
 	</table>
-	<script src="scripts/confirmador.js""></script>
+	<script src="scripts/confirmador.js"></script>
 </body>
 </html>

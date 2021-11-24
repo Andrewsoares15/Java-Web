@@ -12,15 +12,8 @@ import br.com.connection.ConnectionFactory;
 //import br.com.connection.ConnectionFactory;
 
 public class DAO {
-//	private String driver = "com.mysql.cj.jdbc.Driver";
-//	private String url = "jdbc:mysql://127.0.0.1:3306/dbagencia?useTimezone=true&serverTimezone=UTC";
-//	private String user = "root";
-//	private String password = "andrew123";
-	// MÉTODO DE CONEXÃO
+
 	private Connection conexao = new ConnectionFactory().recuperarConexao();
-//	private Connection conectar() {
-//		return conexao;
-//	}
 
 	public void inserirContato(JavaBeans contato) {
 		String create = "INSERT INTO contatos (nome,fone,email) VALUES(?,?,?)";

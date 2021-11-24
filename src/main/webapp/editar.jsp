@@ -12,16 +12,16 @@
 	<form name="frmcontato" action="update" class="form">
 		<table>
 			<tr>
-				<td>Idcon:<input type="text" name="idcon"  id="caixa4" readonly="readonly" value ="<% out.print(request.getAttribute("idcon")); %>">  </td>
+				<td>Idcon:<input type="text" name="idcon"  id="caixa4" readonly="readonly" value ="${idcon}">  </td>
 			</tr>
 			<tr>
-				<td>Nome:<input type="text" name="nome"  class="caixa1" value ="<% out.print(request.getAttribute("nome")); %>"> </td>
+				<td>Nome:<input type="text" name="nome"  class="caixa1" value ="${nome}"> </td>
 			</tr>
 			<tr>
-				<td>Fone:<input  type="text" name="fone"  class="caixa2" value ="<% out.print(request.getAttribute("fone")); %>"> </td> 
+				<td>Fone:<input  type="text" name="fone"  class="caixa2" value ="${fone}"> </td> 
 			</tr>
 			<tr>
-				<td>Email:<input type="text" name="email"  class="caixa3" value ="<% out.print(request.getAttribute("email")); %>"> </td> 
+				<td>Email:<input type="text" name="email"  class="caixa3" value ="${email}"> </td> 
 			</tr>
 		</table>
 		<input type="button" value="Salvar" class="botao2" onclick="validar()">
